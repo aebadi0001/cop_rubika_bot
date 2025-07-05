@@ -1,0 +1,4 @@
+rubpy
+sphinx
+sphinx-rtd-theme
+myst-parser
