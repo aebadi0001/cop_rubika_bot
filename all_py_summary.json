@@ -1,0 +1,1789 @@
+{
+  "vendor_rubpy_bots_types_aux_data.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "AuxData",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_bot.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Bot",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_bot_command.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "BotCommand",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_button.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Button",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_button_selection.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ButtonSelection",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_button_textbox.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ButtonTextbox",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_chat.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Chat",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_contact_message.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ContactMessage",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_file.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "File",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_forwarded_from.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ForwardedFrom",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_inline_message.py": {
+    "functions": [],
+    "classes": []
+  },
+  "vendor_rubpy_bots_types_keypad.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Keypad",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_keypad_row.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "KeypadRow",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_live_location.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "LiveLocation",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_location.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Location",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_message.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Message",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_payment_status.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "PaymentStatus",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_poll.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Poll",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_poll_status.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "PollStatus",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_sticker.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Sticker",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_types_update.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Update",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_bots_client.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Bot",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_enums_chat_action.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ChatAction",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_enums_chat_type.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ChatType",
+        "doc": "Chat type enumeration used in :obj:`~pyrogram.types.Chat`.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_enums_parse_mode.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ParseMode",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_enums_poll_type.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "PollType",
+        "doc": "Poll type enumeration",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_enums_reaction_type.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ReactionType",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_enums_report_type.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ReportType",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ReportTypeObject",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_advanced_build.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Builder",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_auth_register_device.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "RegisterDevice",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_auth_send_code.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendCode",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_auth_sign_in.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SignIn",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_channels_add_channel.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "AddChannel",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_channels_remove_channel.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "RemoveChannel",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_chats_delete_avatar.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "DeleteAvatar",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_chats_get_avatars.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetAvatars",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_chats_get_chats.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetChats",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_chats_upload_avatar.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "UploadAvatar",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_contacts_delete_contact.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "DeleteContact",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_ban_member.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "BanMember",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_get_info.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetInfo",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_get_transcription.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetTranscription",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_report_object.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ReportObject",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_transcribe_voice.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "TranscribeVoice",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_groups_join_group.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "JoinGroup",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_groups_leave_group.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "LeaveGroup",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_groups_remove_group.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "RemoveGroup",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_create_poll.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "CreatePoll",
+        "doc": "Provides a method to create a poll message.\n\nMethods:\n- create_poll: Create a poll message with the specified parameters.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_delete_messages.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "DeleteMessages",
+        "doc": "Provides a method to delete messages.\n\nMethods:\n- delete_messages: Delete specified messages associated with the given object.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_edit_message.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "EditMessage",
+        "doc": "Provides a method to edit a message.\n\nMethods:\n- edit_message: Edit the specified message associated with the given object.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_document.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendDocument",
+        "doc": "Provides a method to send a document.\n\nMethods:\n- send_document: Send a document.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_music.py": {
+    "functions": [],
+    "classes": []
+  },
+  "vendor_rubpy_methods_messages_send_photo.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendPhoto",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_video.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendVideo",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_voice.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendVoice",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_settings_delete_folder.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "DeleteFolder",
+        "doc": "Provides a method to delete a folder.\n\nMethods:\n- delete_folder: Delete a folder.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_settings_terminate_session.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "TerminateSession",
+        "doc": "Provides a method to terminate a user session.\n\nMethods:\n- terminate_session: Terminate a user session.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_settings_update_username.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "UpdateUsername",
+        "doc": "Provides a method to update the username of the user.\n\nMethods:\n- update_username: Update the username of the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_chats_getchatsupdates.py": {
+    "functions": [],
+    "classes": []
+  },
+  "vendor_rubpy_methods_chats_seen_chats.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SeenChats",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_contacts_get_contacts.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetContacts",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_join.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Join",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_extras_leave_chat.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "LeaveChat",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_groups_add_group.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "AddGroup",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_groups_getgroupinfo.py": {
+    "functions": [],
+    "classes": []
+  },
+  "vendor_rubpy_methods_messages_forward_messages.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ForwardMessages",
+        "doc": "Provides a method to forward messages from one object to another.\n\nMethods:\n- forward_messages: Forward specified messages from one object to another.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_reaction.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Reaction",
+        "doc": "Provides a method to add a reaction to a specific message.\n\nMethods:\n- reaction: Add a reaction to a specific message.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_remove_reaction.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "RemoveReaction",
+        "doc": "Provides a method to remove a reaction from a specific message.\n\nMethods:\n- remove_reaction: Remove a reaction from a specific message.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_gif.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendGif",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_message.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendMessage",
+        "doc": "Class to send messages with attachments.\n\nMethods:\n- send_message: Send a message with various optional parameters.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_send_sticker.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SendSticker",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_messages_vote_poll.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "VotePoll",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_settings_get_folders.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetFolders",
+        "doc": "Provides a method to get a list of folders.\n\nMethods:\n- get_folders: Get a list of folders.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_settings_set_setting.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SetSetting",
+        "doc": "Provides a method to set various privacy settings for the user.\n\nMethods:\n- set_setting: Set various privacy settings for the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_settings_update_profile.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "UpdateProfile",
+        "doc": "Provides a method to update user profile information.\n\nMethods:\n- update_profile: Update user profile information.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_stickers_search_stickers.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SearchStickers",
+        "doc": "Provides a method to search for stickers.\n\nMethods:\n- search_stickers: Search for stickers.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_users_get_me.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetMe",
+        "doc": "Provides a method to get information about the authenticated user.\n\nMethods:\n- get_me: Get information about the authenticated user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_add_handler.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "AddHandler",
+        "doc": "",
+        "methods": [
+          {
+            "name": "add_handler",
+            "doc": "Add a handler function for updates.\n\nArgs:\n- func (Callable): The handler function to be added.\n- handler (rubpy.handlers.Handler): The handler object.\n\nReturns:\n- None"
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_connect.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Connect",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_get_members.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetMembers",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_get_updates.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "GetUpdates",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_remove_handler.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "RemoveHandler",
+        "doc": "",
+        "methods": [
+          {
+            "name": "remove_handler",
+            "doc": "Remove a handler function.\n\nArgs:\n- func: The handler function to be removed."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_run.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Run",
+        "doc": "",
+        "methods": [
+          {
+            "name": "run",
+            "doc": "Run the client in either synchronous or asynchronous mode.\n\nArgs:\n- coroutine (Optional[Coroutine]): An optional coroutine to run asynchronously.\n- phone_number (str): The phone number to use for starting the client.\n\nReturns:\n- If running synchronously, returns the initialized client.\n- If running asynchronously, returns None."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_thumbnail.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ResultMedia",
+        "doc": "Represents media data along with its metadata.\n\nAttributes:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds.",
+        "methods": [
+          {
+            "name": "__repr__",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "doc": "Initialize ResultMedia with image data and metadata.\n\nArgs:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds."
+          },
+          {
+            "name": "ndarray_to_bytes",
+            "doc": "Convert NumPy array to bytes.\n\nArgs:\n- image: NumPy array representing the image.\n\nReturns:\n- bytes: The image data in bytes."
+          },
+          {
+            "name": "to_base64",
+            "doc": "Convert media data to base64.\n\nReturns:\n- str: Base64-encoded media data."
+          }
+        ]
+      },
+      {
+        "name": "MediaThumbnail",
+        "doc": "Provides methods to generate media thumbnails.\n\nMethods:\n- from_image: Generate a thumbnail from image data.\n- from_video: Generate a thumbnail from video data.",
+        "methods": [
+          {
+            "name": "from_image",
+            "doc": "Generate a thumbnail from image data.\n\nArgs:\n- image (bytes): The raw image data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          {
+            "name": "from_video",
+            "doc": "Generate a thumbnail from video data.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_upload.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "UploadFile",
+        "doc": "Provides a method to upload a file.\n\nMethods:\n- upload: Upload a file.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_parser_markdown.py": {
+    "functions": [
+      {
+        "name": "java_like_length",
+        "doc": "محاسبه طول رشته بر اساس واحدهای UTF-16 (شبیه جاوا).\n\nپارامترها:\n- text: رشته ورودی.\n\nخروجی:\nتعداد واحدهای کاراکتر UTF-16."
+      }
+    ],
+    "classes": [
+      {
+        "name": "Markdown",
+        "doc": "کلاس برای پردازش و استخراج متادیتا از متن Markdown با رفتار شبیه جاوا.",
+        "methods": [
+          {
+            "name": "to_markdown",
+            "doc": "Convert HTML to Markdown.\n\nArgs:\n    - text (str): HTML text.\n\nReturns:\n    - str: Markdown text."
+          },
+          {
+            "name": "to_metadata",
+            "doc": "استخراج متادیتا از متن Markdown با محاسبه شاخص‌ها به سبک جاوا.\n\nپارامترها:\n- text: متن Markdown.\n\nخروجی:\nدیکشنری حاوی متن ساده و متادیتا (در صورت وجود)."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_disconnect.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Disconnect",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_download.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Download",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_network.py": {
+    "functions": [
+      {
+        "name": "capitalize",
+        "doc": "تبدیل رشته snake_case به CamelCase.\n\nپارامترها:\n- text: رشته با فرمت snake_case.\n\nخروجی:\nرشته با فرمت CamelCase."
+      }
+    ],
+    "classes": [
+      {
+        "name": "Network",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": "Network class initializition.\n\nParameters:\n- client: Instance of rubpy.Client."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_rubino_thumbnail.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ResultMedia",
+        "doc": "Represents media data along with its metadata.\n\nAttributes:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds.",
+        "methods": [
+          {
+            "name": "__repr__",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "doc": "Initialize ResultMedia with image data and metadata.\n\nArgs:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds."
+          },
+          {
+            "name": "ndarray_to_bytes",
+            "doc": "Convert NumPy array to bytes.\n\nArgs:\n- image: NumPy array representing the image.\n\nReturns:\n- bytes: The image data in bytes."
+          },
+          {
+            "name": "to_base64",
+            "doc": "Convert media data to base64.\n\nReturns:\n- str: Base64-encoded media data."
+          }
+        ]
+      },
+      {
+        "name": "MediaThumbnail",
+        "doc": "Provides methods to generate media thumbnails.\n\nMethods:\n- from_image: Generate a thumbnail from image data.\n- from_video: Generate a thumbnail from video data.",
+        "methods": [
+          {
+            "name": "from_image",
+            "doc": "Generate a thumbnail from image data.\n\nArgs:\n- image (bytes): The raw image data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          {
+            "name": "from_video",
+            "doc": "Generate a thumbnail from video data.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          {
+            "name": "_from_video_opencv",
+            "doc": "Generate a thumbnail from video data using OpenCV.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          {
+            "name": "_from_video_moviepy",
+            "doc": "Generate a thumbnail from video data using MoviePy.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_handlers.py": {
+    "functions": [
+      {
+        "name": "create_handler",
+        "doc": "ایجاد دینامیک یک handler بر اساس نام و کلاس پایه.\n\nپارامترها:\n- name: نام handler.\n- base: کلاس پایه برای handler.\n- authorized_handlers: لیست نام‌های handlerهای مجاز.\n- exception: آیا در صورت غیرمجاز بودن handler خطا پرتاب شود.\n- kwargs: آرگومان‌های اضافی برای تنظیم کلاس.\n\nخروجی:\nکلاس handler ایجادشده یا None در صورت غیرمجاز بودن.\n\nخطاها:\n- AttributeError: اگر handler غیرمجاز باشد و exception=True."
+      }
+    ],
+    "classes": [
+      {
+        "name": "BaseHandlers",
+        "doc": "کلاس پایه برای handlerهای سفارشی.\n\nپارامترها:\n- models: لیست مدل‌های فیلتر.\n- any_handler: آیا هر handler باید اجرا شود.\n- kwargs: آرگومان‌های اضافی.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "is_async",
+            "doc": "بررسی اینکه آیا تابع داده‌شده ناهمگام (async) است.\n\nپارامترها:\n- value: تابع برای بررسی.\n\nخروجی:\nTrue اگر تابع ناهمگام باشد، در غیر این صورت False."
+          }
+        ]
+      },
+      {
+        "name": "Handlers",
+        "doc": "کلاس برای مدیریت و ایجاد handlerهای خاص.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "__eq__",
+            "doc": "بررسی برابری با کلاس پایه handlerها.\n\nپارامترها:\n- value: مقداری برای بررسی.\n\nخروجی:\nTrue اگر برابر با BaseHandlers باشد، در غیر این صورت False."
+          },
+          {
+            "name": "__dir__",
+            "doc": "دریافت لیست handlerهای مجاز.\n\nخروجی:\nلیست مرتب‌شده handlerهای مجاز."
+          },
+          {
+            "name": "__call__",
+            "doc": "فراخوانی handler بر اساس نام.\n\nپارامترها:\n- name: نام handler.\n- args: آرگومان‌های اضافی موقعیتی.\n- kwargs: آرگومان‌های اضافی کلیدی.\n\nخروجی:\nکلاس handler ایجادشده."
+          },
+          {
+            "name": "__getattr__",
+            "doc": "دریافت handler ایجادشده دینامیک بر اساس نام.\n\nپارامترها:\n- name: نام handler.\n\nخروجی:\nکلاس handler ایجادشده."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_sync.py": {
+    "functions": [
+      {
+        "name": "async_to_sync",
+        "doc": "Wrap an asynchronous function or asynchronous generator method\nto make it synchronous.\n\nParameters:\n- obj: Object containing the method.\n- name: Name of the method to wrap.\n\nReturns:\nWrapped synchronous function or generator."
+      },
+      {
+        "name": "wrap_methods",
+        "doc": "Wrap asynchronous methods in a class to make them synchronous.\n\nParameters:\n- source: Class containing asynchronous methods."
+      },
+      {
+        "name": "wrap_types_methods",
+        "doc": "Wrap asynchronous methods in types' classes to make them synchronous."
+      }
+    ],
+    "classes": []
+  },
+  "vendor_rubpy_methods_utilities_audio.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "AudioResult",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "Audio",
+        "doc": "",
+        "methods": [
+          {
+            "name": "get_audio_info",
+            "doc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_methods_utilities_start.py": {
+    "functions": [
+      {
+        "name": "convert_farsi_digits",
+        "doc": ""
+      },
+      {
+        "name": "normalize_phone_number",
+        "doc": ""
+      }
+    ],
+    "classes": [
+      {
+        "name": "Start",
+        "doc": "",
+        "methods": []
+      }
+    ]
+  },
+  "vendor_rubpy_sessions_stringSession.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "StringSession",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "load",
+            "doc": ""
+          },
+          {
+            "name": "dump",
+            "doc": ""
+          },
+          {
+            "name": "from_sqlite",
+            "doc": ""
+          },
+          {
+            "name": "insert",
+            "doc": ""
+          },
+          {
+            "name": "information",
+            "doc": ""
+          },
+          {
+            "name": "save",
+            "doc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_client.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Client",
+        "doc": "کلاینت اصلی برای تعامل با API روبیکا.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": "مقداردهی اولیه کلاینت روبیکا.\n\nپارامترها:\n- name: نام یا مسیر فایل سشن (str) یا نمونه StringSession.\n- auth: کلید احراز هویت (اختیاری).\n- private_key: کلید خصوصی RSA (اختیاری، رشته یا بایت).\n- bot_token: توکن ربات (اختیاری).\n- phone_number: شماره تلفن (اختیاری).\n- user_agent: رشته User-Agent (اختیاری، پیش‌فرض مرورگر کروم).\n- timeout: زمان انتظار درخواست‌ها (ثانیه، پیش‌فرض 20).\n- lang_code: کد زبان (پیش‌فرض 'fa').\n- parse_mode: حالت تجزیه پیام (html، markdown، mk یا None).\n- proxy: آدرس پروکسی (مثال: 'http://127.0.0.1:80').\n- logger: شیء Logger برای لاگ‌گیری (اختیاری).\n- display_welcome: نمایش پیام خوش‌آمدگویی (پیش‌فرض False).\n- platform: پلتفرم کلاینت ('Web' یا 'Android').\n\nخطاها:\n- ValueError: در صورت نامعتبر بودن ورودی‌ها.\n- TypeError: در صورت نادرست بودن نوع name."
+          },
+          {
+            "name": "__enter__",
+            "doc": "پشتیبانی از context manager برای شروع کلاینت."
+          },
+          {
+            "name": "__exit__",
+            "doc": "پشتیبانی از context manager برای قطع اتصال."
+          }
+        ]
+      }
+    ]
+  },
+  "bot_main.py": {
+    "functions": [
+      {
+        "name": "load_plugins",
+        "doc": ""
+      },
+      {
+        "name": "main",
+        "doc": ""
+      }
+    ],
+    "classes": []
+  },
+  "vendor_rubpy_rubino_client.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Rubino",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_sessions_sqliteSession.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "SQLiteSession",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "upgrade_database",
+            "doc": ""
+          },
+          {
+            "name": "information",
+            "doc": ""
+          },
+          {
+            "name": "insert",
+            "doc": ""
+          },
+          {
+            "name": "from_string",
+            "doc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_types_update.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "Update",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__str__",
+            "doc": ""
+          },
+          {
+            "name": "__getattr__",
+            "doc": ""
+          },
+          {
+            "name": "__setitem__",
+            "doc": ""
+          },
+          {
+            "name": "__getitem__",
+            "doc": ""
+          },
+          {
+            "name": "__lts__",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "jsonify",
+            "doc": ""
+          },
+          {
+            "name": "find_keys",
+            "doc": ""
+          },
+          {
+            "name": "command",
+            "doc": ""
+          },
+          {
+            "name": "to_dict",
+            "doc": "Return the update as dict"
+          },
+          {
+            "name": "message",
+            "doc": ""
+          },
+          {
+            "name": "is_me",
+            "doc": ""
+          },
+          {
+            "name": "status",
+            "doc": ""
+          },
+          {
+            "name": "action",
+            "doc": ""
+          },
+          {
+            "name": "is_edited",
+            "doc": ""
+          },
+          {
+            "name": "type",
+            "doc": ""
+          },
+          {
+            "name": "title",
+            "doc": ""
+          },
+          {
+            "name": "is_forward",
+            "doc": ""
+          },
+          {
+            "name": "forward_type_from",
+            "doc": ""
+          },
+          {
+            "name": "is_event",
+            "doc": ""
+          },
+          {
+            "name": "event_data",
+            "doc": ""
+          },
+          {
+            "name": "is_file_inline",
+            "doc": ""
+          },
+          {
+            "name": "file_inline",
+            "doc": ""
+          },
+          {
+            "name": "music",
+            "doc": ""
+          },
+          {
+            "name": "file",
+            "doc": ""
+          },
+          {
+            "name": "photo",
+            "doc": ""
+          },
+          {
+            "name": "video",
+            "doc": ""
+          },
+          {
+            "name": "voice",
+            "doc": ""
+          },
+          {
+            "name": "contact",
+            "doc": ""
+          },
+          {
+            "name": "location",
+            "doc": ""
+          },
+          {
+            "name": "poll",
+            "doc": ""
+          },
+          {
+            "name": "gif",
+            "doc": ""
+          },
+          {
+            "name": "sticker",
+            "doc": ""
+          },
+          {
+            "name": "text",
+            "doc": ""
+          },
+          {
+            "name": "message_id",
+            "doc": ""
+          },
+          {
+            "name": "reply_message_id",
+            "doc": ""
+          },
+          {
+            "name": "is_group",
+            "doc": ""
+          },
+          {
+            "name": "is_channel",
+            "doc": ""
+          },
+          {
+            "name": "is_private",
+            "doc": ""
+          },
+          {
+            "name": "object_guid",
+            "doc": ""
+          },
+          {
+            "name": "author_guid",
+            "doc": ""
+          },
+          {
+            "name": "is_text",
+            "doc": ""
+          },
+          {
+            "name": "guid_type",
+            "doc": "Determine the type of the object based on its GUID.\n\nArgs:\n    - object_guid (str): The GUID of the object.\n\nReturns:\n    - str: The type of the object ('Channel', 'Group', or 'User')."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_exceptions.py": {
+    "functions": [],
+    "classes": [
+      {
+        "name": "ClientError",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "StopHandler",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "APIException",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "CancelledError",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "RequestError",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "UploadError",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeIsUsed",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "TooRequests",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "InvalidAuth",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ServerError",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "UrlNotFound",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ErrorAction",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ErrorIgnore",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ErrorGeneric",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "NoConnection",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "InvalidInput",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "Undeliverable",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "NotRegistered",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "CodeIsExpired",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "InvalidMethod",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "UsernameExist",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ErrorTryAgain",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ErrorMessageTry",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "InternalProblem",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ErrorMessageIgn",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "NotSupportedApiVersion",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "NetworkError",
+        "doc": "",
+        "methods": []
+      },
+      {
+        "name": "ExcetionsHandler",
+        "doc": "",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "__getattr__",
+            "doc": ""
+          },
+          {
+            "name": "__call__",
+            "doc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_filters.py": {
+    "functions": [
+      {
+        "name": "create_model",
+        "doc": "ایجاد دینامیک یک مدل بر اساس نام و کلاس پایه.\n\nپارامترها:\n- name: نام مدل.\n- base: کلاس پایه برای مدل.\n- authorize: لیست نام‌های مدل‌های مجاز.\n- exception: آیا در صورت غیرمجاز بودن مدل خطا پرتاب شود.\n- kwargs: آرگومان‌های اضافی برای تنظیم کلاس.\n\nخروجی:\nکلاس مدل ایجادشده یا None در صورت غیرمجاز بودن.\n\nخطاها:\n- AttributeError: اگر مدل غیرمجاز باشد و exception=True."
+      }
+    ],
+    "classes": [
+      {
+        "name": "Operator",
+        "doc": "کلاس برای تعریف عملگرهای استفاده‌شده در فیلترهای مدل‌ها.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "__eq__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "BaseModel",
+        "doc": "کلاس پایه برای مدل‌های سفارشی.\n\nپارامترها:\n- func: تابع فیلتر (اختیاری).\n- filters: لیست یا تک فیلتر برای اعمال.\n- kwargs: آرگومان‌های اضافی.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "insert",
+            "doc": "اضافه کردن فیلتر به لیست فیلترها."
+          },
+          {
+            "name": "__or__",
+            "doc": ""
+          },
+          {
+            "name": "__and__",
+            "doc": ""
+          },
+          {
+            "name": "__eq__",
+            "doc": ""
+          },
+          {
+            "name": "__ne__",
+            "doc": ""
+          },
+          {
+            "name": "__lt__",
+            "doc": ""
+          },
+          {
+            "name": "__le__",
+            "doc": ""
+          },
+          {
+            "name": "__gt__",
+            "doc": ""
+          },
+          {
+            "name": "__ge__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "commands",
+        "doc": "فیلتر برای دستورات در پیام‌های متنی.\n\nپارامترها:\n- commands: دستور یا لیست دستورات (رشته یا لیست رشته‌ها).\n- prefixes: پیشوند یا لیست پیشوندها (پیش‌فرض '/').\n- case_sensitive: حساسیت به حروف بزرگ و کوچک (پیش‌فرض False).",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "regex",
+        "doc": "فیلتر برای تطبیق متن با عبارات منظم.\n\nپارامترها:\n- pattern: الگوی عبارت منظم.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "object_guids",
+        "doc": "فیلتر بر اساس GUIDهای شیء.\n\nپارامترها:\n- args: GUID یا لیست/تاپل GUIDها.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "author_guids",
+        "doc": "فیلتر بر اساس GUIDهای نویسنده.\n\nپارامترها:\n- args: GUID یا لیست/تاپل GUIDها.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          }
+        ]
+      },
+      {
+        "name": "Models",
+        "doc": "کلاس برای مدیریت و ایجاد مدل‌های خاص.",
+        "methods": [
+          {
+            "name": "__init__",
+            "doc": ""
+          },
+          {
+            "name": "__eq__",
+            "doc": "بررسی برابری با کلاس پایه مدل‌ها."
+          },
+          {
+            "name": "__dir__",
+            "doc": "دریافت لیست مدل‌های مجاز."
+          },
+          {
+            "name": "__call__",
+            "doc": "فراخوانی مدل بر اساس نام."
+          },
+          {
+            "name": "__getattr__",
+            "doc": "دریافت مدل دینامیک بر اساس نام."
+          }
+        ]
+      }
+    ]
+  },
+  "vendor_rubpy_utils.py": {
+    "functions": [
+      {
+        "name": "is_rubika_link",
+        "doc": "Check if the given string contains a Rubika link.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika link, False otherwise."
+      },
+      {
+        "name": "is_group_link",
+        "doc": "Check if the given string contains a Rubika group link.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika group link, False otherwise."
+      },
+      {
+        "name": "is_channel_link",
+        "doc": "Check if the given string contains a Rubika channel link.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika channel link, False otherwise."
+      },
+      {
+        "name": "is_username",
+        "doc": "Check if the given string contains a Rubika username.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika username, False otherwise."
+      },
+      {
+        "name": "get_rubika_links",
+        "doc": "Extract Rubika links from the given string.\n\n:param string: Input string to extract links from.\n:return: List of Rubika links found in the string."
+      },
+      {
+        "name": "get_group_links",
+        "doc": "Extract Rubika group links from the given string.\n\n:param string: Input string to extract group links from.\n:return: List of Rubika group links found in the string."
+      },
+      {
+        "name": "get_channel_links",
+        "doc": "Extract Rubika channel links from the given string.\n\n:param string: Input string to extract channel links from.\n:return: List of Rubika channel links found in the string."
+      },
+      {
+        "name": "get_usernames",
+        "doc": "Extract Rubika usernames from the given string.\n\n:param string: Input string to extract usernames from.\n:return: List of Rubika usernames found in the string."
+      },
+      {
+        "name": "Bold",
+        "doc": "Make the text bold.\n\n:param text: Input text to be formatted.\n:return: Bold formatted text."
+      },
+      {
+        "name": "Italic",
+        "doc": "Make the text italic.\n\n:param text: Input text to be formatted.\n:return: Italic formatted text."
+      },
+      {
+        "name": "Underline",
+        "doc": "Underline the text.\n\n:param text: Input text to be formatted.\n:return: Underlined text."
+      },
+      {
+        "name": "Strike",
+        "doc": "Add strike-through to the text.\n\n:param text: Input text to be formatted.\n:return: Text with strike-through."
+      },
+      {
+        "name": "Spoiler",
+        "doc": "Format the text as a spoiler.\n\n:param text: Input text to be formatted.\n:return: Spoiler formatted text."
+      },
+      {
+        "name": "Code",
+        "doc": "Format the text as code.\n\n:param text: Input text to be formatted.\n:return: Code formatted text."
+      },
+      {
+        "name": "Mention",
+        "doc": "Mention a user with a specific object GUID.\n\n:param text: Text to be mentioned.\n:param object_guid: GUID of the mentioned object.\n:return: Mention formatted text."
+      },
+      {
+        "name": "HyperLink",
+        "doc": "Create a hyperlink with the provided text and link.\n\n:param text: Text for the hyperlink.\n:param link: URL for the hyperlink.\n:return: Hyperlink formatted text."
+      }
+    ],
+    "classes": []
+  },
+  "bot_config.py": {
+    "functions": [],
+    "classes": []
+  }
+}
