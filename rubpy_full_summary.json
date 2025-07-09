@@ -1,0 +1,4031 @@
+{
+  "__init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "client.py": {
+    "doc": null,
+    "classes": {
+      "Client": {
+        "doc": "کلاینت اصلی برای تعامل با API روبیکا.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "name",
+              "auth",
+              "private_key",
+              "bot_token",
+              "phone_number",
+              "user_agent",
+              "timeout",
+              "lang_code",
+              "parse_mode",
+              "proxy",
+              "logger",
+              "display_welcome",
+              "platform",
+              "max_retries"
+            ],
+            "doc": "مقداردهی اولیه کلاینت روبیکا.\n\nپارامترها:\n- name: نام یا مسیر فایل سشن (str) یا نمونه StringSession.\n- auth: کلید احراز هویت (اختیاری).\n- private_key: کلید خصوصی RSA (اختیاری، رشته یا بایت).\n- bot_token: توکن ربات (اختیاری).\n- phone_number: شماره تلفن (اختیاری).\n- user_agent: رشته User-Agent (اختیاری، پیش‌فرض مرورگر کروم).\n- timeout: زمان انتظار درخواست‌ها (ثانیه، پیش‌فرض 20).\n- lang_code: کد زبان (پیش‌فرض 'fa').\n- parse_mode: حالت تجزیه پیام (html، markdown، mk یا None).\n- proxy: آدرس پروکسی (مثال: 'http://127.0.0.1:80').\n- logger: شیء Logger برای لاگ‌گیری (اختیاری).\n- display_welcome: نمایش پیام خوش‌آمدگویی (پیش‌فرض False).\n- platform: پلتفرم کلاینت ('Web' یا 'Android').\n\nخطاها:\n- ValueError: در صورت نامعتبر بودن ورودی‌ها.\n- TypeError: در صورت نادرست بودن نوع name."
+          },
+          "__enter__": {
+            "args": [
+              "self"
+            ],
+            "doc": "پشتیبانی از context manager برای شروع کلاینت."
+          },
+          "__exit__": {
+            "args": [
+              "self"
+            ],
+            "doc": "پشتیبانی از context manager برای قطع اتصال."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# تنظیم پلتفرم",
+      "# اعتبارسنجی ورودی‌ها",
+      "# تنظیم سشن",
+      "# تنظیم parse_mode",
+      "# تنظیم logger",
+      "# تنظیم کلید خصوصی",
+      "# مقداردهی متغیرها",
+      "# حذف پیام خوش‌آمدگویی برای بهینه‌سازی"
+    ]
+  },
+  "exceptions.py": {
+    "doc": null,
+    "classes": {
+      "ClientError": {
+        "doc": null,
+        "methods": {}
+      },
+      "StopHandler": {
+        "doc": null,
+        "methods": {}
+      },
+      "APIException": {
+        "doc": null,
+        "methods": {}
+      },
+      "CancelledError": {
+        "doc": null,
+        "methods": {}
+      },
+      "RequestError": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "message",
+              "request"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "UploadError": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "status",
+              "status_det",
+              "dev_message"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "CodeIsUsed": {
+        "doc": null,
+        "methods": {}
+      },
+      "TooRequests": {
+        "doc": null,
+        "methods": {}
+      },
+      "InvalidAuth": {
+        "doc": null,
+        "methods": {}
+      },
+      "ServerError": {
+        "doc": null,
+        "methods": {}
+      },
+      "UrlNotFound": {
+        "doc": null,
+        "methods": {}
+      },
+      "ErrorAction": {
+        "doc": null,
+        "methods": {}
+      },
+      "ErrorIgnore": {
+        "doc": null,
+        "methods": {}
+      },
+      "ErrorGeneric": {
+        "doc": null,
+        "methods": {}
+      },
+      "NoConnection": {
+        "doc": null,
+        "methods": {}
+      },
+      "InvalidInput": {
+        "doc": null,
+        "methods": {}
+      },
+      "Undeliverable": {
+        "doc": null,
+        "methods": {}
+      },
+      "NotRegistered": {
+        "doc": null,
+        "methods": {}
+      },
+      "CodeIsExpired": {
+        "doc": null,
+        "methods": {}
+      },
+      "InvalidMethod": {
+        "doc": null,
+        "methods": {}
+      },
+      "UsernameExist": {
+        "doc": null,
+        "methods": {}
+      },
+      "ErrorTryAgain": {
+        "doc": null,
+        "methods": {}
+      },
+      "ErrorMessageTry": {
+        "doc": null,
+        "methods": {}
+      },
+      "InternalProblem": {
+        "doc": null,
+        "methods": {}
+      },
+      "ErrorMessageIgn": {
+        "doc": null,
+        "methods": {}
+      },
+      "NotSupportedApiVersion": {
+        "doc": null,
+        "methods": {}
+      },
+      "NetworkError": {
+        "doc": null,
+        "methods": {}
+      },
+      "ExcetionsHandler": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": null
+          },
+          "__getattr__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": null
+          },
+          "__call__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "filters.py": {
+    "doc": null,
+    "classes": {
+      "Operator": {
+        "doc": "کلاس برای تعریف عملگرهای استفاده‌شده در فیلترهای مدل‌ها.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "value",
+              "operator"
+            ],
+            "doc": null
+          },
+          "__eq__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "BaseModel": {
+        "doc": "کلاس پایه برای مدل‌های سفارشی.\n\nپارامترها:\n- func: تابع فیلتر (اختیاری).\n- filters: لیست یا تک فیلتر برای اعمال.\n- kwargs: آرگومان‌های اضافی.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "func",
+              "filters"
+            ],
+            "doc": null
+          },
+          "insert": {
+            "args": [
+              "self",
+              "filter"
+            ],
+            "doc": "اضافه کردن فیلتر به لیست فیلترها."
+          },
+          "__or__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__and__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__eq__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__ne__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__lt__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__le__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__gt__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          },
+          "__ge__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "commands": {
+        "doc": "فیلتر برای دستورات در پیام‌های متنی.\n\nپارامترها:\n- commands: دستور یا لیست دستورات (رشته یا لیست رشته‌ها).\n- prefixes: پیشوند یا لیست پیشوندها (پیش‌فرض '/').\n- case_sensitive: حساسیت به حروف بزرگ و کوچک (پیش‌فرض False).",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "commands",
+              "prefixes",
+              "case_sensitive"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "regex": {
+        "doc": "فیلتر برای تطبیق متن با عبارات منظم.\n\nپارامترها:\n- pattern: الگوی عبارت منظم.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "pattern"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "object_guids": {
+        "doc": "فیلتر بر اساس GUIDهای شیء.\n\nپارامترها:\n- args: GUID یا لیست/تاپل GUIDها.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "author_guids": {
+        "doc": "فیلتر بر اساس GUIDهای نویسنده.\n\nپارامترها:\n- args: GUID یا لیست/تاپل GUIDها.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "Models": {
+        "doc": "کلاس برای مدیریت و ایجاد مدل‌های خاص.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": null
+          },
+          "__eq__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": "بررسی برابری با کلاس پایه مدل‌ها."
+          },
+          "__dir__": {
+            "args": [
+              "self"
+            ],
+            "doc": "دریافت لیست مدل‌های مجاز."
+          },
+          "__call__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": "فراخوانی مدل بر اساس نام."
+          },
+          "__getattr__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": "دریافت مدل دینامیک بر اساس نام."
+          }
+        }
+      }
+    },
+    "functions": {
+      "create_model": {
+        "args": [
+          "name",
+          "base",
+          "authorize",
+          "exception"
+        ],
+        "doc": "ایجاد دینامیک یک مدل بر اساس نام و کلاس پایه.\n\nپارامترها:\n- name: نام مدل.\n- base: کلاس پایه برای مدل.\n- authorize: لیست نام‌های مدل‌های مجاز.\n- exception: آیا در صورت غیرمجاز بودن مدل خطا پرتاب شود.\n- kwargs: آرگومان‌های اضافی برای تنظیم کلاس.\n\nخروجی:\nکلاس مدل ایجادشده یا None در صورت غیرمجاز بودن.\n\nخطاها:\n- AttributeError: اگر مدل غیرمجاز باشد و exception=True."
+      }
+    },
+    "comments": [
+      "# لیست عناصر عمومی برای export",
+      "# لیست مدل‌های داخلی",
+      "# جایگزینی ماژول جاری با نمونه‌ای از Models",
+      "# تعریف نوع‌های مدل خاص"
+    ]
+  },
+  "handlers.py": {
+    "doc": null,
+    "classes": {
+      "BaseHandlers": {
+        "doc": "کلاس پایه برای handlerهای سفارشی.\n\nپارامترها:\n- models: لیست مدل‌های فیلتر.\n- any_handler: آیا هر handler باید اجرا شود.\n- kwargs: آرگومان‌های اضافی.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_async": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": "بررسی اینکه آیا تابع داده‌شده ناهمگام (async) است.\n\nپارامترها:\n- value: تابع برای بررسی.\n\nخروجی:\nTrue اگر تابع ناهمگام باشد، در غیر این صورت False."
+          }
+        }
+      },
+      "Handlers": {
+        "doc": "کلاس برای مدیریت و ایجاد handlerهای خاص.",
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": null
+          },
+          "__eq__": {
+            "args": [
+              "self",
+              "value"
+            ],
+            "doc": "بررسی برابری با کلاس پایه handlerها.\n\nپارامترها:\n- value: مقداری برای بررسی.\n\nخروجی:\nTrue اگر برابر با BaseHandlers باشد، در غیر این صورت False."
+          },
+          "__dir__": {
+            "args": [
+              "self"
+            ],
+            "doc": "دریافت لیست handlerهای مجاز.\n\nخروجی:\nلیست مرتب‌شده handlerهای مجاز."
+          },
+          "__call__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": "فراخوانی handler بر اساس نام.\n\nپارامترها:\n- name: نام handler.\n- args: آرگومان‌های اضافی موقعیتی.\n- kwargs: آرگومان‌های اضافی کلیدی.\n\nخروجی:\nکلاس handler ایجادشده."
+          },
+          "__getattr__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": "دریافت handler ایجادشده دینامیک بر اساس نام.\n\nپارامترها:\n- name: نام handler.\n\nخروجی:\nکلاس handler ایجادشده."
+          }
+        }
+      }
+    },
+    "functions": {
+      "create_handler": {
+        "args": [
+          "name",
+          "base",
+          "authorized_handlers",
+          "exception"
+        ],
+        "doc": "ایجاد دینامیک یک handler بر اساس نام و کلاس پایه.\n\nپارامترها:\n- name: نام handler.\n- base: کلاس پایه برای handler.\n- authorized_handlers: لیست نام‌های handlerهای مجاز.\n- exception: آیا در صورت غیرمجاز بودن handler خطا پرتاب شود.\n- kwargs: آرگومان‌های اضافی برای تنظیم کلاس.\n\nخروجی:\nکلاس handler ایجادشده یا None در صورت غیرمجاز بودن.\n\nخطاها:\n- AttributeError: اگر handler غیرمجاز باشد و exception=True."
+      }
+    },
+    "comments": [
+      "# لیست handlerهای مجاز",
+      "# اگر handler_filter یک کلاس باشد، نمونه‌سازی می‌شود",
+      "# بررسی ناهمگام یا همگام بودن فیلتر و اجرای آن",
+      "# جایگزینی ماژول جاری با نمونه‌ای از Handlers",
+      "# تعریف نوع‌های handler خاص"
+    ]
+  },
+  "network.py": {
+    "doc": null,
+    "classes": {
+      "Network": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "client"
+            ],
+            "doc": "Network class initializition.\n\nParameters:\n- client: Instance of rubpy.Client."
+          }
+        }
+      }
+    },
+    "functions": {
+      "capitalize": {
+        "args": [
+          "text"
+        ],
+        "doc": "تبدیل رشته snake_case به CamelCase.\n\nپارامترها:\n- text: رشته با فرمت snake_case.\n\nخروجی:\nرشته با فرمت CamelCase."
+      }
+    },
+    "comments": [
+      "#self.logger.error(f\"خطا در handler برای {name}: {e}\", extra={'data': update}, exc_info=True)",
+      "# Send initial handshake",
+      "# Initial request to get upload metadata"
+    ]
+  },
+  "sync.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {
+      "async_to_sync": {
+        "args": [
+          "obj",
+          "name"
+        ],
+        "doc": "Wrap an asynchronous function or asynchronous generator method\nto make it synchronous.\n\nParameters:\n- obj: Object containing the method.\n- name: Name of the method to wrap.\n\nReturns:\nWrapped synchronous function or generator."
+      },
+      "wrap_methods": {
+        "args": [
+          "source"
+        ],
+        "doc": "Wrap asynchronous methods in a class to make them synchronous.\n\nParameters:\n- source: Class containing asynchronous methods."
+      },
+      "wrap_types_methods": {
+        "args": [],
+        "doc": "Wrap asynchronous methods in types' classes to make them synchronous."
+      }
+    },
+    "comments": [
+      "# Wrap all relevant methods in the Client's Methods class",
+      "# Wrap all relevant methods in the Rubino Client's Methods class",
+      "# Wrap types' bound methods"
+    ]
+  },
+  "utils.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {
+      "is_rubika_link": {
+        "args": [
+          "string"
+        ],
+        "doc": "Check if the given string contains a Rubika link.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika link, False otherwise."
+      },
+      "is_group_link": {
+        "args": [
+          "string"
+        ],
+        "doc": "Check if the given string contains a Rubika group link.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika group link, False otherwise."
+      },
+      "is_channel_link": {
+        "args": [
+          "string"
+        ],
+        "doc": "Check if the given string contains a Rubika channel link.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika channel link, False otherwise."
+      },
+      "is_username": {
+        "args": [
+          "string"
+        ],
+        "doc": "Check if the given string contains a Rubika username.\n\n:param string: Input string to check.\n:return: True if the string contains a Rubika username, False otherwise."
+      },
+      "get_rubika_links": {
+        "args": [
+          "string"
+        ],
+        "doc": "Extract Rubika links from the given string.\n\n:param string: Input string to extract links from.\n:return: List of Rubika links found in the string."
+      },
+      "get_group_links": {
+        "args": [
+          "string"
+        ],
+        "doc": "Extract Rubika group links from the given string.\n\n:param string: Input string to extract group links from.\n:return: List of Rubika group links found in the string."
+      },
+      "get_channel_links": {
+        "args": [
+          "string"
+        ],
+        "doc": "Extract Rubika channel links from the given string.\n\n:param string: Input string to extract channel links from.\n:return: List of Rubika channel links found in the string."
+      },
+      "get_usernames": {
+        "args": [
+          "string"
+        ],
+        "doc": "Extract Rubika usernames from the given string.\n\n:param string: Input string to extract usernames from.\n:return: List of Rubika usernames found in the string."
+      },
+      "Bold": {
+        "args": [
+          "text"
+        ],
+        "doc": "Make the text bold.\n\n:param text: Input text to be formatted.\n:return: Bold formatted text."
+      },
+      "Italic": {
+        "args": [
+          "text"
+        ],
+        "doc": "Make the text italic.\n\n:param text: Input text to be formatted.\n:return: Italic formatted text."
+      },
+      "Underline": {
+        "args": [
+          "text"
+        ],
+        "doc": "Underline the text.\n\n:param text: Input text to be formatted.\n:return: Underlined text."
+      },
+      "Strike": {
+        "args": [
+          "text"
+        ],
+        "doc": "Add strike-through to the text.\n\n:param text: Input text to be formatted.\n:return: Text with strike-through."
+      },
+      "Spoiler": {
+        "args": [
+          "text"
+        ],
+        "doc": "Format the text as a spoiler.\n\n:param text: Input text to be formatted.\n:return: Spoiler formatted text."
+      },
+      "Code": {
+        "args": [
+          "text"
+        ],
+        "doc": "Format the text as code.\n\n:param text: Input text to be formatted.\n:return: Code formatted text."
+      },
+      "Mention": {
+        "args": [
+          "text",
+          "object_guid"
+        ],
+        "doc": "Mention a user with a specific object GUID.\n\n:param text: Text to be mentioned.\n:param object_guid: GUID of the mentioned object.\n:return: Mention formatted text."
+      },
+      "HyperLink": {
+        "args": [
+          "text",
+          "link"
+        ],
+        "doc": "Create a hyperlink with the provided text and link.\n\n:param text: Text for the hyperlink.\n:param link: URL for the hyperlink.\n:return: Hyperlink formatted text."
+      }
+    },
+    "comments": [
+      "# Define regular expressions for patterns",
+      "# Functions to check patterns",
+      "# Functions to extract matches",
+      "# Text formatting functions"
+    ]
+  },
+  "bots___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "bots_client.py": {
+    "doc": null,
+    "classes": {
+      "Bot": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "client"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# -> Final[Union['Done', 'InvalidUrl']]:",
+      "# ... (previous code)",
+      "# -> Final[Union['Done', 'InvalidUrl']]:",
+      "# ... (remaining code)"
+    ]
+  },
+  "bots_types___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_aux_data.py": {
+    "doc": null,
+    "classes": {
+      "AuxData": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_bot.py": {
+    "doc": null,
+    "classes": {
+      "Bot": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_bot_command.py": {
+    "doc": null,
+    "classes": {
+      "BotCommand": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button.py": {
+    "doc": null,
+    "classes": {
+      "Button": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# button_link: Optional[Link]"
+    ]
+  },
+  "bots_types_button_calendar.py": {
+    "doc": null,
+    "classes": {
+      "ButtonCalendar": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button_location.py": {
+    "doc": null,
+    "classes": {
+      "ButtonLocation": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button_number_picker.py": {
+    "doc": null,
+    "classes": {
+      "ButtonNumberPicker": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button_selection.py": {
+    "doc": null,
+    "classes": {
+      "ButtonSelection": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button_selection_item.py": {
+    "doc": null,
+    "classes": {
+      "ButtonSelectionItem": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button_string_picker.py": {
+    "doc": null,
+    "classes": {
+      "ButtonStringPicker": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_button_textbox.py": {
+    "doc": null,
+    "classes": {
+      "ButtonTextbox": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_chat.py": {
+    "doc": null,
+    "classes": {
+      "Chat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_contact_message.py": {
+    "doc": null,
+    "classes": {
+      "ContactMessage": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_file.py": {
+    "doc": null,
+    "classes": {
+      "File": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_forwarded_from.py": {
+    "doc": null,
+    "classes": {
+      "ForwardedFrom": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_inline_message.py": {
+    "doc": null,
+    "classes": {
+      "InlineMessage": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_keypad.py": {
+    "doc": null,
+    "classes": {
+      "Keypad": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_keypad_row.py": {
+    "doc": null,
+    "classes": {
+      "KeypadRow": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_live_location.py": {
+    "doc": null,
+    "classes": {
+      "LiveLocation": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# In Second"
+    ]
+  },
+  "bots_types_location.py": {
+    "doc": null,
+    "classes": {
+      "Location": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_messaage_text_update.py": {
+    "doc": null,
+    "classes": {
+      "messageTextUpdate": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_message.py": {
+    "doc": null,
+    "classes": {
+      "Message": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_message_keypad_update.py": {
+    "doc": null,
+    "classes": {
+      "MessageKeypadUpdate": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_payment_status.py": {
+    "doc": null,
+    "classes": {
+      "PaymentStatus": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_poll.py": {
+    "doc": null,
+    "classes": {
+      "Poll": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_poll_status.py": {
+    "doc": null,
+    "classes": {
+      "PollStatus": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_sticker.py": {
+    "doc": null,
+    "classes": {
+      "Sticker": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "bots_types_update.py": {
+    "doc": null,
+    "classes": {
+      "Update": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "crypto___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "crypto_crypto.py": {
+    "doc": null,
+    "classes": {
+      "Crypto": {
+        "doc": null,
+        "methods": {
+          "decode_auth": {
+            "args": [
+              "auth"
+            ],
+            "doc": "Decode an auth string by applying character substitutions.\n\nArgs:\n    auth (str): The input auth string.\n\nReturns:\n    str: The decoded auth string."
+          },
+          "passphrase": {
+            "args": [
+              "cls",
+              "auth"
+            ],
+            "doc": "Generate a passphrase from an auth string.\n\nArgs:\n    auth (str): The input auth string.\n\nReturns:\n    str: The generated passphrase."
+          },
+          "secret": {
+            "args": [
+              "cls",
+              "length"
+            ],
+            "doc": "Generate a random secret of the given length.\n\nArgs:\n    length (int): Length of the secret.\n\nReturns:\n    str: The generated secret."
+          },
+          "decrypt": {
+            "args": [
+              "cls",
+              "data",
+              "key"
+            ],
+            "doc": "Decrypt data using AES encryption.\n\nArgs:\n    data (str): The encrypted data.\n    key (str): The encryption key.\n\nReturns:\n    dict: The decrypted data as a dictionary."
+          },
+          "encrypt": {
+            "args": [
+              "cls",
+              "data",
+              "key"
+            ],
+            "doc": "Encrypt data using AES encryption.\n\nArgs:\n    data (str or dict): The data to be encrypted.\n    key (str): The encryption key.\n\nReturns:\n    str: The encrypted data as a string."
+          },
+          "sign": {
+            "args": [
+              "pkcs1_15",
+              "data"
+            ],
+            "doc": "Sign data using an RSA private key.\n\nArgs:\n    private_key (str): The RSA private key.\n    data (str): The data to be signed.\n\nReturns:\n    str: The base64-encoded signature."
+          },
+          "create_keys": {
+            "args": [],
+            "doc": "Generate RSA public and private keys.\n\nReturns:\n    tuple: A tuple containing the base64-encoded public key and the private key."
+          },
+          "decrypt_RSA_OAEP": {
+            "args": [
+              "private_key",
+              "data"
+            ],
+            "doc": "Decrypt data using RSA OAEP encryption.\n\nArgs:\n    private_key (str): The RSA private key.\n    data (str): The encrypted data.\n\nReturns:\n    str: The decrypted data as a string."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "#key = RSA.import_key(private_key.encode('utf-8'))"
+    ]
+  },
+  "enums___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "enums_chat_access_type.py": {
+    "doc": null,
+    "classes": {
+      "Access": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_chat_action.py": {
+    "doc": null,
+    "classes": {
+      "ChatAction": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_chat_type.py": {
+    "doc": null,
+    "classes": {
+      "ChatType": {
+        "doc": "Chat type enumeration used in :obj:`~pyrogram.types.Chat`.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_message_media_type.py": {
+    "doc": null,
+    "classes": {
+      "MessageMediaType": {
+        "doc": "Message media type",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_parse_mode.py": {
+    "doc": null,
+    "classes": {
+      "ParseMode": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_poll_type.py": {
+    "doc": null,
+    "classes": {
+      "PollType": {
+        "doc": "Poll type enumeration",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_reaction_type.py": {
+    "doc": null,
+    "classes": {
+      "ReactionType": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "enums_report_type.py": {
+    "doc": null,
+    "classes": {
+      "ReportType": {
+        "doc": null,
+        "methods": {}
+      },
+      "ReportTypeObject": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods___init__.py": {
+    "doc": null,
+    "classes": {
+      "Methods": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_advanced___init__.py": {
+    "doc": null,
+    "classes": {
+      "Advanced": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_advanced_build.py": {
+    "doc": null,
+    "classes": {
+      "Builder": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_advanced_voice_chat_player.py": {
+    "doc": null,
+    "classes": {
+      "VoiceChatConnection": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "peer_connection",
+              "media_player",
+              "audio_track",
+              "chat_guid",
+              "voice_chat_id",
+              "client"
+            ],
+            "doc": null
+          },
+          "stop": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "pause": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "resume": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "replace_track": {
+            "args": [
+              "self",
+              "new_media_path",
+              "loop"
+            ],
+            "doc": null
+          },
+          "get_stats": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "get_info": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "VoiceChatPlayer": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# پیدا کردن اولین sender با kind='audio'",
+      "# MediaStreamTrack initializer",
+      "# Voice Chat ID detection",
+      "# if chat_guid.startswith('g0') else",
+      "# await self.create_channel_voice_chat(chat_guid)",
+      "# Run activity tasks",
+      "# Set remote SDP",
+      "# Logging connection changes"
+    ]
+  },
+  "methods_auth___init__.py": {
+    "doc": null,
+    "classes": {
+      "Auth": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_auth_register_device.py": {
+    "doc": null,
+    "classes": {
+      "RegisterDevice": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# window.navigator.mimeTypes.length (outdated . Defaults to '2')"
+    ]
+  },
+  "methods_auth_send_code.py": {
+    "doc": null,
+    "classes": {
+      "SendCode": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Validate send_type",
+      "# Prepare data for sending the code",
+      "# Use builder to send the code"
+    ]
+  },
+  "methods_auth_sign_in.py": {
+    "doc": null,
+    "classes": {
+      "SignIn": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels___init__.py": {
+    "doc": null,
+    "classes": {
+      "Channels": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_add_channel.py": {
+    "doc": null,
+    "classes": {
+      "AddChannel": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_add_channel_members.py": {
+    "doc": null,
+    "classes": {
+      "AddChannelMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_ban_channel_member.py": {
+    "doc": null,
+    "classes": {
+      "BanChannelMember": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_channel_preview_by_join_link.py": {
+    "doc": null,
+    "classes": {
+      "ChannelPreviewByJoinLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_check_channel_username.py": {
+    "doc": null,
+    "classes": {
+      "CheckChannelUsername": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_create_channel_voice_chat.py": {
+    "doc": null,
+    "classes": {
+      "CreateChannelVoiceChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_discard_channel_voice_chat.py": {
+    "doc": null,
+    "classes": {
+      "DiscardChannelVoiceChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_edit_channel_info.py": {
+    "doc": null,
+    "classes": {
+      "EditChannelInfo": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_get_banned_group_members.py": {
+    "doc": null,
+    "classes": {
+      "GetBannedGroupMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_get_channel_admin_access_list.py": {
+    "doc": null,
+    "classes": {
+      "GetChannelAdminAccessList": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_get_channel_admin_members.py": {
+    "doc": null,
+    "classes": {
+      "GetChannelAdminMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_get_channel_all_members.py": {
+    "doc": null,
+    "classes": {
+      "GetChannelAllMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_get_channel_info.py": {
+    "doc": null,
+    "classes": {
+      "GetChannelInfo": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_get_channel_link.py": {
+    "doc": null,
+    "classes": {
+      "GetChannelLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_join_channel_action.py": {
+    "doc": null,
+    "classes": {
+      "JoinChannelAction": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_join_channel_by_link.py": {
+    "doc": null,
+    "classes": {
+      "JoinChannelByLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_remove_channel.py": {
+    "doc": null,
+    "classes": {
+      "RemoveChannel": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_seen_channel_messages.py": {
+    "doc": null,
+    "classes": {
+      "SeenChannelMessages": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_set_channel_link.py": {
+    "doc": null,
+    "classes": {
+      "SetChannelLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_set_channel_voice_chat_setting.py": {
+    "doc": null,
+    "classes": {
+      "SetChannelVoiceChatSetting": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_channels_update_channel_username.py": {
+    "doc": null,
+    "classes": {
+      "UpdateChannelUsername": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats___init__.py": {
+    "doc": null,
+    "classes": {
+      "Chats": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_delete_avatar.py": {
+    "doc": null,
+    "classes": {
+      "DeleteAvatar": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_delete_chat_history.py": {
+    "doc": null,
+    "classes": {
+      "DeleteChatHistory": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_get_abs_objects.py": {
+    "doc": null,
+    "classes": {
+      "GetAbsObjects": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_get_avatars.py": {
+    "doc": null,
+    "classes": {
+      "GetAvatars": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_get_chats.py": {
+    "doc": null,
+    "classes": {
+      "GetChats": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_get_chats_updates.py": {
+    "doc": null,
+    "classes": {
+      "GetChatsUpdates": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_get_link_from_app_url.py": {
+    "doc": null,
+    "classes": {
+      "GetLinkFromAppUrl": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_search_chat_messages.py": {
+    "doc": null,
+    "classes": {
+      "SearchChatMessages": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_seen_chats.py": {
+    "doc": null,
+    "classes": {
+      "SeenChats": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_send_chat_activity.py": {
+    "doc": null,
+    "classes": {
+      "SendChatActivity": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_set_action_chat.py": {
+    "doc": null,
+    "classes": {
+      "SetActionChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_chats_upload_avatar.py": {
+    "doc": null,
+    "classes": {
+      "UploadAvatar": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_contacts___init__.py": {
+    "doc": null,
+    "classes": {
+      "Contacts": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_contacts_add_address_book.py": {
+    "doc": null,
+    "classes": {
+      "AddAddressBook": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_contacts_delete_contact.py": {
+    "doc": null,
+    "classes": {
+      "DeleteContact": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_contacts_get_contacts.py": {
+    "doc": null,
+    "classes": {
+      "GetContacts": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_contacts_get_contacts_updates.py": {
+    "doc": null,
+    "classes": {
+      "GetContactsUpdates": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_decorators___init__.py": {
+    "doc": null,
+    "classes": {
+      "Decorators": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_decorators_on_chat_updates.py": {
+    "doc": null,
+    "classes": {
+      "OnChatUpdates": {
+        "doc": null,
+        "methods": {
+          "on_chat_updates": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_decorators_on_message_updates.py": {
+    "doc": null,
+    "classes": {
+      "OnMessageUpdates": {
+        "doc": null,
+        "methods": {
+          "on_message_updates": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_decorators_on_remove_notifications.py": {
+    "doc": null,
+    "classes": {
+      "OnRemoveNotifications": {
+        "doc": null,
+        "methods": {
+          "on_remove_notifications": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_decorators_on_show_activities.py": {
+    "doc": null,
+    "classes": {
+      "OnShowActivities": {
+        "doc": null,
+        "methods": {
+          "on_show_activities": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_decorators_on_show_notifications.py": {
+    "doc": null,
+    "classes": {
+      "OnShowNotifications": {
+        "doc": null,
+        "methods": {
+          "on_show_notifications": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras___init__.py": {
+    "doc": null,
+    "classes": {
+      "Exctras": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_action_on_join_request.py": {
+    "doc": null,
+    "classes": {
+      "ActionOnJoinRequest": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_ban_member.py": {
+    "doc": null,
+    "classes": {
+      "BanMember": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_create_join_link.py": {
+    "doc": null,
+    "classes": {
+      "CreateJoinLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_info.py": {
+    "doc": null,
+    "classes": {
+      "GetInfo": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_join_links.py": {
+    "doc": null,
+    "classes": {
+      "GetJoinLinks": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_join_requests.py": {
+    "doc": null,
+    "classes": {
+      "GetJoinRequests": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_object_by_username.py": {
+    "doc": null,
+    "classes": {
+      "GetObjectByUsername": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_profile_link_items.py": {
+    "doc": null,
+    "classes": {
+      "GetProfileLinkItems": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_related_objects.py": {
+    "doc": null,
+    "classes": {
+      "GetRelatedObjects": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_get_transcription.py": {
+    "doc": null,
+    "classes": {
+      "GetTranscription": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_join.py": {
+    "doc": null,
+    "classes": {
+      "Join": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_leave_chat.py": {
+    "doc": null,
+    "classes": {
+      "LeaveChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_report_object.py": {
+    "doc": null,
+    "classes": {
+      "ReportObject": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_search_global_objects.py": {
+    "doc": null,
+    "classes": {
+      "SearchGlobalObjects": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_transcribe_voice.py": {
+    "doc": null,
+    "classes": {
+      "TranscribeVoice": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_extras_user_is_admin.py": {
+    "doc": null,
+    "classes": {
+      "UserIsAdmin": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_gif___init__.py": {
+    "doc": null,
+    "classes": {
+      "Gifs": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_gif_add_to_my_gif_set.py": {
+    "doc": null,
+    "classes": {
+      "AddToMyGifSet": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_gif_get_my_gif_set.py": {
+    "doc": null,
+    "classes": {
+      "GetMyGifSet": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_gif_remove_from_my_gif_set.py": {
+    "doc": null,
+    "classes": {
+      "RemoveFromMyGifSet": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups___init__.py": {
+    "doc": null,
+    "classes": {
+      "Groups": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_add_group.py": {
+    "doc": null,
+    "classes": {
+      "AddGroup": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_add_group_members.py": {
+    "doc": null,
+    "classes": {
+      "AddGroupMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_ban_group_member.py": {
+    "doc": null,
+    "classes": {
+      "BanGroupMember": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_create_group_voice_chat.py": {
+    "doc": null,
+    "classes": {
+      "CreateGroupVoiceChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_delete_no_access_group_chat.py": {
+    "doc": null,
+    "classes": {
+      "DeleteNoAccessGroupChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_edit_group_info.py": {
+    "doc": null,
+    "classes": {
+      "EditGroupInfo": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_banned_group_members.py": {
+    "doc": null,
+    "classes": {
+      "GetBannedGroupMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_admin_access_list.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupAdminAccessList": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_admin_members.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupAdminMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_all_members.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupAllMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_default_access.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupDefaultAccess": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_info.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupInfo": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_link.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_mention_list.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupMentionList": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_online_count.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupOnlineCount": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_get_group_voice_chat_updates.py": {
+    "doc": null,
+    "classes": {
+      "GetGroupVoiceChatUpdates": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_group_preview_by_join_link.py": {
+    "doc": null,
+    "classes": {
+      "GroupPreviewByJoinLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_join_group.py": {
+    "doc": null,
+    "classes": {
+      "JoinGroup": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_leave_group.py": {
+    "doc": null,
+    "classes": {
+      "LeaveGroup": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_leave_group_voice_chat.py": {
+    "doc": null,
+    "classes": {
+      "LeaveGroupVoiceChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_remove_group.py": {
+    "doc": null,
+    "classes": {
+      "RemoveGroup": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_set_group_admin.py": {
+    "doc": null,
+    "classes": {
+      "SetGroupAdmin": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_set_group_default_access.py": {
+    "doc": null,
+    "classes": {
+      "SetGroupDefaultAccess": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_set_group_link.py": {
+    "doc": null,
+    "classes": {
+      "SetGroupLink": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_groups_set_group_voice_chat_setting.py": {
+    "doc": null,
+    "classes": {
+      "SetGroupVoiceChatSetting": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages___init__.py": {
+    "doc": null,
+    "classes": {
+      "Messages": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_action_on_message_reaction.py": {
+    "doc": null,
+    "classes": {
+      "ActionOnMessageReaction": {
+        "doc": "Provides a method to perform actions on reactions to a specific message.\n\nMethods:\n- action_on_message_reaction: Perform actions on reactions to a specific message.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_auto_delete_message.py": {
+    "doc": null,
+    "classes": {
+      "AutoDeleteMessage": {
+        "doc": "Provides a method to automatically delete a message after a specified time.\n\nMethods:\n- auto_delete_message: Automatically delete a message after a specified time.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_create_poll.py": {
+    "doc": null,
+    "classes": {
+      "CreatePoll": {
+        "doc": "Provides a method to create a poll message.\n\nMethods:\n- create_poll: Create a poll message with the specified parameters.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_delete_messages.py": {
+    "doc": null,
+    "classes": {
+      "DeleteMessages": {
+        "doc": "Provides a method to delete messages.\n\nMethods:\n- delete_messages: Delete specified messages associated with the given object.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_edit_message.py": {
+    "doc": null,
+    "classes": {
+      "EditMessage": {
+        "doc": "Provides a method to edit a message.\n\nMethods:\n- edit_message: Edit the specified message associated with the given object.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_forward_messages.py": {
+    "doc": null,
+    "classes": {
+      "ForwardMessages": {
+        "doc": "Provides a method to forward messages from one object to another.\n\nMethods:\n- forward_messages: Forward specified messages from one object to another.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_get_message_share_url.py": {
+    "doc": null,
+    "classes": {
+      "GetMessageShareUrl": {
+        "doc": "Provides a method to get the shareable URL of a specific message.\n\nMethods:\n- get_message_url: Get the shareable URL of a specific message.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_get_messages_by_id.py": {
+    "doc": null,
+    "classes": {
+      "GetMessagesByID": {
+        "doc": "Provides a method to retrieve messages by their IDs.\n\nMethods:\n- get_messages_by_id: Retrieve messages by their IDs.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_get_messages_interval.py": {
+    "doc": null,
+    "classes": {
+      "GetMessagesInterval": {
+        "doc": "Provides a method to retrieve messages in an interval around a middle message ID.\n\nMethods:\n- get_messages_interval: Retrieve messages in an interval around a middle message ID.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_get_messages_updates.py": {
+    "doc": null,
+    "classes": {
+      "GetMessagesUpdates": {
+        "doc": "Provides a method to get message updates for a specific object.\n\nMethods:\n- get_messages_updates: Get message updates for a specific object.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_get_poll_option_voters.py": {
+    "doc": null,
+    "classes": {
+      "GetPollOptionVoters": {
+        "doc": "Provides a method to get voters for a specific poll option.\n\nMethods:\n- get_poll_option_voters: Get voters for a specific poll option.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_get_poll_status.py": {
+    "doc": null,
+    "classes": {
+      "GetPollStatus": {
+        "doc": "Provides a method to get the status of a specific poll.\n\nMethods:\n- get_poll_status: Get the status of a specific poll.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_reaction.py": {
+    "doc": null,
+    "classes": {
+      "Reaction": {
+        "doc": "Provides a method to add a reaction to a specific message.\n\nMethods:\n- reaction: Add a reaction to a specific message.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_remove_reaction.py": {
+    "doc": null,
+    "classes": {
+      "RemoveReaction": {
+        "doc": "Provides a method to remove a reaction from a specific message.\n\nMethods:\n- remove_reaction: Remove a reaction from a specific message.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_request_send_file.py": {
+    "doc": null,
+    "classes": {
+      "RequestSendFile": {
+        "doc": "Provides a method to request sending a file.\n\nMethods:\n- request_send_file: Request sending a file.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_document.py": {
+    "doc": null,
+    "classes": {
+      "SendDocument": {
+        "doc": "Provides a method to send a document.\n\nMethods:\n- send_document: Send a document.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_gif.py": {
+    "doc": null,
+    "classes": {
+      "SendGif": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_message.py": {
+    "doc": null,
+    "classes": {
+      "SendMessage": {
+        "doc": "Class to send messages with attachments.\n\nMethods:\n- send_message: Send a message with various optional parameters.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Process text content and parse mode",
+      "# Process sticker content",
+      "# Process inline file content",
+      "# Process thumbnail",
+      "# Upload the file",
+      "# Additional processing based on file type",
+      "# Process thumbnail for inline display",
+      "# Finalize input for sending the message",
+      "# Send the message",
+      "# Schedule auto-delete if specified"
+    ]
+  },
+  "methods_messages_send_music.py": {
+    "doc": null,
+    "classes": {
+      "SendMusic": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_photo.py": {
+    "doc": null,
+    "classes": {
+      "SendPhoto": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_sticker.py": {
+    "doc": null,
+    "classes": {
+      "SendSticker": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_video.py": {
+    "doc": null,
+    "classes": {
+      "SendVideo": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_video_message.py": {
+    "doc": null,
+    "classes": {
+      "SendVideoMessage": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_send_voice.py": {
+    "doc": null,
+    "classes": {
+      "SendVoice": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Add a file type check for voice messages",
+      "# if isinstance(voice, Path):",
+      "#     file_extension = voice.suffix.lower()",
+      "#     if file_extension not in ['.ogg', '.opus']:",
+      "#         raise ValueError(f\"Unsupported file type for voice messages: {file_extension}\")"
+    ]
+  },
+  "methods_messages_set_pin_message.py": {
+    "doc": null,
+    "classes": {
+      "SetPinMessage": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_messages_vote_poll.py": {
+    "doc": null,
+    "classes": {
+      "VotePoll": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_settings___init__.py": {
+    "doc": null,
+    "classes": {
+      "Settings": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_settings_delete_folder.py": {
+    "doc": null,
+    "classes": {
+      "DeleteFolder": {
+        "doc": "Provides a method to delete a folder.\n\nMethods:\n- delete_folder: Delete a folder.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_get_blocked_users.py": {
+    "doc": null,
+    "classes": {
+      "GetBlockedUsers": {
+        "doc": "Provides a method to get a list of blocked users.\n\nMethods:\n- get_blocked_users: Get a list of blocked users.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_get_folders.py": {
+    "doc": null,
+    "classes": {
+      "GetFolders": {
+        "doc": "Provides a method to get a list of folders.\n\nMethods:\n- get_folders: Get a list of folders.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_get_my_sessions.py": {
+    "doc": null,
+    "classes": {
+      "GetMySessions": {
+        "doc": "Provides a method to get information about the current user's sessions.\n\nMethods:\n- get_my_sessions: Get information about the current user's sessions.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_get_privacy_setting.py": {
+    "doc": null,
+    "classes": {
+      "GetPrivacySetting": {
+        "doc": "Provides a method to get the current user's privacy setting.\n\nMethods:\n- get_privacy_setting: Get the current user's privacy setting.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_get_suggested_folders.py": {
+    "doc": null,
+    "classes": {
+      "GetSuggestedFolders": {
+        "doc": "Provides a method to get the suggested folders for the user.\n\nMethods:\n- get_suggested_folders: Get the suggested folders for the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_get_two_passcode_status.py": {
+    "doc": null,
+    "classes": {
+      "GetTwoPasscodeStatus": {
+        "doc": "Provides a method to get the two-passcode status for the user.\n\nMethods:\n- get_two_passcode_status: Get the two-passcode status for the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_set_setting.py": {
+    "doc": null,
+    "classes": {
+      "SetSetting": {
+        "doc": "Provides a method to set various privacy settings for the user.\n\nMethods:\n- set_setting: Set various privacy settings for the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_setup_two_step_verification.py": {
+    "doc": null,
+    "classes": {
+      "SetupTwoStepVerification": {
+        "doc": "Provides a method to set up two-step verification for the user.\n\nMethods:\n- setup_two_step_verification: Set up two-step verification for the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_terminate_session.py": {
+    "doc": null,
+    "classes": {
+      "TerminateSession": {
+        "doc": "Provides a method to terminate a user session.\n\nMethods:\n- terminate_session: Terminate a user session.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_update_profile.py": {
+    "doc": null,
+    "classes": {
+      "UpdateProfile": {
+        "doc": "Provides a method to update user profile information.\n\nMethods:\n- update_profile: Update user profile information.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# type: ignore"
+    ]
+  },
+  "methods_settings_update_username.py": {
+    "doc": null,
+    "classes": {
+      "UpdateUsername": {
+        "doc": "Provides a method to update the username of the user.\n\nMethods:\n- update_username: Update the username of the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers___init__.py": {
+    "doc": null,
+    "classes": {
+      "Stickers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_action_on_sticker_set.py": {
+    "doc": null,
+    "classes": {
+      "ActionOnStickerSet": {
+        "doc": "Provides a method to perform actions on a sticker set.\n\nMethods:\n- action_on_sticker_set: Add or remove a sticker set.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_get_my_sticker_sets.py": {
+    "doc": null,
+    "classes": {
+      "GetMyStickerSets": {
+        "doc": "Provides a method to get the sticker sets owned by the user.\n\nMethods:\n- get_my_sticker_sets: Get the sticker sets owned by the user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_get_sticker_set_by_id.py": {
+    "doc": null,
+    "classes": {
+      "GetStickerSetByID": {
+        "doc": "Provides a method to get a sticker set by its ID.\n\nMethods:\n- get_sticker_set_by_id: Get a sticker set by its ID.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_get_stickers_by_emoji.py": {
+    "doc": null,
+    "classes": {
+      "GetStickersByEmoji": {
+        "doc": "Provides a method to get stickers by emoji.\n\nMethods:\n- get_stickers_by_emoji: Get stickers by emoji.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_get_stickers_by_set_ids.py": {
+    "doc": null,
+    "classes": {
+      "GetStickersBySetIDs": {
+        "doc": "Provides a method to get stickers by set IDs.\n\nMethods:\n- get_stickers_by_set_ids: Get stickers by set IDs.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_get_trend_sticker_sets.py": {
+    "doc": null,
+    "classes": {
+      "GetTrendStickerSets": {
+        "doc": "Provides a method to get trending sticker sets.\n\nMethods:\n- get_trend_sticker_sets: Get trending sticker sets.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_stickers_search_stickers.py": {
+    "doc": null,
+    "classes": {
+      "SearchStickers": {
+        "doc": "Provides a method to search for stickers.\n\nMethods:\n- search_stickers: Search for stickers.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_users___init__.py": {
+    "doc": null,
+    "classes": {
+      "Users": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_users_check_user_username.py": {
+    "doc": null,
+    "classes": {
+      "CheckUserUsername": {
+        "doc": "Provides a method to check the availability of a username for a user.\n\nMethods:\n- check_user_username: Check the availability of a username.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_users_delete_user_chat.py": {
+    "doc": null,
+    "classes": {
+      "DeleteUserChat": {
+        "doc": "Provides a method to delete a user chat.\n\nMethods:\n- delete_user_chat: Delete a user chat.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_users_get_me.py": {
+    "doc": null,
+    "classes": {
+      "GetMe": {
+        "doc": "Provides a method to get information about the authenticated user.\n\nMethods:\n- get_me: Get information about the authenticated user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_users_get_user_info.py": {
+    "doc": null,
+    "classes": {
+      "GetUserInfo": {
+        "doc": "Provides a method to get information about a user.\n\nMethods:\n- get_user_info: Get information about a specific user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_users_set_block_user.py": {
+    "doc": null,
+    "classes": {
+      "SetBlockUser": {
+        "doc": "Provides a method to block or unblock a user.\n\nMethods:\n- set_block_user: Block or unblock a user.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities___init__.py": {
+    "doc": null,
+    "classes": {
+      "Utilities": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_add_handler.py": {
+    "doc": null,
+    "classes": {
+      "AddHandler": {
+        "doc": null,
+        "methods": {
+          "add_handler": {
+            "args": [
+              "self",
+              "func",
+              "handler"
+            ],
+            "doc": "Add a handler function for updates.\n\nArgs:\n- func (Callable): The handler function to be added.\n- handler (rubpy.handlers.Handler): The handler object.\n\nReturns:\n- None"
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_audio.py": {
+    "doc": null,
+    "classes": {
+      "AudioResult": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "duration",
+              "performer"
+            ],
+            "doc": null
+          }
+        }
+      },
+      "Audio": {
+        "doc": null,
+        "methods": {
+          "get_audio_info": {
+            "args": [
+              "cls",
+              "audio"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_connect.py": {
+    "doc": null,
+    "classes": {
+      "Connect": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# if self.auth and self.private_key is not None:",
+      "#     self.guid = (await self.get_me()).user.user_guid"
+    ]
+  },
+  "methods_utilities_disconnect.py": {
+    "doc": null,
+    "classes": {
+      "Disconnect": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_download.py": {
+    "doc": null,
+    "classes": {
+      "Download": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_download_profile_picture.py": {
+    "doc": null,
+    "classes": {
+      "DownloadProfilePicture": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Return an empty bytes object if no profile picture is found."
+    ]
+  },
+  "methods_utilities_get_members.py": {
+    "doc": null,
+    "classes": {
+      "GetMembers": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Get members for a channel",
+      "# Get members for a group"
+    ]
+  },
+  "methods_utilities_get_updates.py": {
+    "doc": null,
+    "classes": {
+      "GetUpdates": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_remove_handler.py": {
+    "doc": null,
+    "classes": {
+      "RemoveHandler": {
+        "doc": null,
+        "methods": {
+          "remove_handler": {
+            "args": [
+              "self",
+              "func"
+            ],
+            "doc": "Remove a handler function.\n\nArgs:\n- func: The handler function to be removed."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_run.py": {
+    "doc": null,
+    "classes": {
+      "Run": {
+        "doc": null,
+        "methods": {
+          "run": {
+            "args": [
+              "self",
+              "coroutine",
+              "phone_number"
+            ],
+            "doc": "Run the client in either synchronous or asynchronous mode.\n\nArgs:\n- coroutine (Optional[Coroutine]): An optional coroutine to run asynchronously.\n- phone_number (str): The phone number to use for starting the client.\n\nReturns:\n- If running synchronously, returns the initialized client.\n- If running asynchronously, returns None."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_utilities_start.py": {
+    "doc": null,
+    "classes": {
+      "Start": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {
+      "convert_farsi_digits": {
+        "args": [
+          "text"
+        ],
+        "doc": null
+      },
+      "normalize_phone_number": {
+        "args": [
+          "phone"
+        ],
+        "doc": null
+      }
+    },
+    "comments": [
+      "# پترن کامل: تشخیص شماره داخلی و بین‌المللی (تا ۱۵ رقم طبق استاندارد ITU-T E.164)"
+    ]
+  },
+  "methods_utilities_thumbnail.py": {
+    "doc": null,
+    "classes": {
+      "ResultMedia": {
+        "doc": "Represents media data along with its metadata.\n\nAttributes:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds.",
+        "methods": {
+          "__repr__": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "__init__": {
+            "args": [
+              "self",
+              "image",
+              "width",
+              "height",
+              "seconds"
+            ],
+            "doc": "Initialize ResultMedia with image data and metadata.\n\nArgs:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds."
+          },
+          "ndarray_to_bytes": {
+            "args": [
+              "self",
+              "image"
+            ],
+            "doc": "Convert NumPy array to bytes.\n\nArgs:\n- image: NumPy array representing the image.\n\nReturns:\n- bytes: The image data in bytes."
+          },
+          "to_base64": {
+            "args": [
+              "self"
+            ],
+            "doc": "Convert media data to base64.\n\nReturns:\n- str: Base64-encoded media data."
+          }
+        }
+      },
+      "MediaThumbnail": {
+        "doc": "Provides methods to generate media thumbnails.\n\nMethods:\n- from_image: Generate a thumbnail from image data.\n- from_video: Generate a thumbnail from video data.",
+        "methods": {
+          "from_image": {
+            "args": [
+              "cls",
+              "image"
+            ],
+            "doc": "Generate a thumbnail from image data.\n\nArgs:\n- image (bytes): The raw image data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          "from_video": {
+            "args": [
+              "cls",
+              "video"
+            ],
+            "doc": "Generate a thumbnail from video data.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Check if PIL is available",
+      "# Check if OpenCV and NumPy are available",
+      "# If image is not a NumPy array, convert it",
+      "# Resize the image",
+      "# Encode the image to PNG format",
+      "# Extract frame from the middle of the video",
+      "# Continue with the OpenCV approach if moviepy is not available",
+      "# Read the video using OpenCV",
+      "# If successful, calculate video duration and create ResultMedia object"
+    ]
+  },
+  "methods_utilities_upload.py": {
+    "doc": null,
+    "classes": {
+      "UploadFile": {
+        "doc": "Provides a method to upload a file.\n\nMethods:\n- upload: Upload a file.\n\nAttributes:\n- self (rubpy.Client): The rubpy client instance.",
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_voice_chat___init__.py": {
+    "doc": null,
+    "classes": {
+      "VoiceCall": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_voice_chat_join_voice_chat.py": {
+    "doc": null,
+    "classes": {
+      "JoinVoiceChat": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_voice_chat_send_group_voice_chat_activity.py": {
+    "doc": null,
+    "classes": {
+      "SendGroupVoiceChatActivity": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "methods_voice_chat_set_voice_chat_state.py": {
+    "doc": null,
+    "classes": {
+      "SetVoiceChatState": {
+        "doc": null,
+        "methods": {}
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "parser___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "parser_markdown.py": {
+    "doc": null,
+    "classes": {
+      "Markdown": {
+        "doc": "کلاس برای پردازش و استخراج متادیتا از متن Markdown با رفتار شبیه جاوا.",
+        "methods": {
+          "to_markdown": {
+            "args": [
+              "self",
+              "text"
+            ],
+            "doc": "Convert HTML to Markdown.\n\nArgs:\n    - text (str): HTML text.\n\nReturns:\n    - str: Markdown text."
+          },
+          "to_metadata": {
+            "args": [
+              "self",
+              "text"
+            ],
+            "doc": "استخراج متادیتا از متن Markdown با محاسبه شاخص‌ها به سبک جاوا.\n\nپارامترها:\n- text: متن Markdown.\n\nخروجی:\nدیکشنری حاوی متن ساده و متادیتا (در صورت وجود)."
+          }
+        }
+      }
+    },
+    "functions": {
+      "java_like_length": {
+        "args": [
+          "text"
+        ],
+        "doc": "محاسبه طول رشته بر اساس واحدهای UTF-16 (شبیه جاوا).\n\nپارامترها:\n- text: رشته ورودی.\n\nخروجی:\nتعداد واحدهای کاراکتر UTF-16."
+      }
+    },
+    "comments": [
+      "# الگوی عبارات منظم برای شناسایی نشانه‌گذاری‌های Markdown",
+      "# نگاشت نوع نشانه‌گذاری به گروه مربوطه در الگوی رجکس",
+      "# برای ردیابی تغییرات شاخص‌ها در واحدهای UTF-16",
+      "# برای ردیابی تغییرات شاخص‌ها در واحدهای کاراکتر پایتون",
+      "# شناسایی نوع نشانه‌گذاری",
+      "# طول محتوای خالص در UTF-16",
+      "# استخراج زبان برای بلوک کد",
+      "# پردازش لینک‌ها و منشن‌ها",
+      "# جایگزینی نشانه‌گذاری با متن خالص و به‌روزرسانی متن و آفست",
+      "# طول کل نشانه‌گذاری در UTF-16",
+      "# طول کل نشانه‌گذاری در کاراکترهای پایتون"
+    ]
+  },
+  "rubino___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "rubino_client.py": {
+    "doc": null,
+    "classes": {
+      "Rubino": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "client"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "#exceptions.ErrorAction(result.get('status_det'))",
+      "# async def upload_file(self, file, profile_id: str, file_type: str, file_name: str = None, chunk: int = 1048576,",
+      "#                       callback=None, *args, **kwargs):",
+      "#     \"\"\"",
+      "#     Upload a file to Rubika.",
+      "#     Parameters:",
+      "#     - file: File path or bytes.",
+      "#     - mime: MIME type of the file.",
+      "#     - file_name: Name of the file.",
+      "#     - chunk: Chunk size for uploading.",
+      "#     - callback: Progress callback.",
+      "#     Returns:",
+      "#     Results object.",
+      "#     \"\"\"",
+      "#     if isinstance(file, str):",
+      "#         if not os.path.exists(file):",
+      "#             raise ValueError('File not found in the given path')",
+      "#         if file_name is None:",
+      "#             file_name = os.path.basename(file)",
+      "#         async with aiofiles.open(file, 'rb+') as file:",
+      "#             file = await file.read()",
+      "#     elif not isinstance(file, bytes):",
+      "#         raise TypeError('File argument must be a file path or bytes')",
+      "#     if file_name is None:",
+      "#         raise ValueError('File name is not set')",
+      "#     result = await self.request_upload_file(profile_id, file_name, len(file), file_type)",
+      "#     id = result.file_id",
+      "#     index = 0",
+      "#     count_retry = 0",
+      "#     max_retring = 3",
+      "#     total = int(len(file) / chunk + 1)",
+      "#     upload_url = result.server_url",
+      "#     hash_file_request = result.hash_file_request",
+      "#     while index < total:",
+      "#         if count_retry == max_retring:",
+      "#             break",
+      "#         data = file[index * chunk: index * chunk + chunk]",
+      "#         try:",
+      "#             response = await self.client.connection.session.post(",
+      "#                 upload_url,",
+      "#                 headers={",
+      "#                     'auth': self.client.auth,",
+      "#                     'file-id': id,",
+      "#                     'total-part': str(total),",
+      "#                     'part-number': str(index + 1),",
+      "#                     'chunk-size': str(len(data)),",
+      "#                     'hash-file-request': hash_file_request",
+      "#                 },",
+      "#                 data=data,",
+      "#                 proxy=self.client.proxy,",
+      "#             )",
+      "#             response = await response.json()",
+      "#             if response.get('status') != 'OK':",
+      "#                 result = await self.request_upload_file(profile_id, file_name, len(file), file_type)",
+      "#                 id = result.file_id",
+      "#                 index = 0",
+      "#                 total = int(len(file) / chunk + 1)",
+      "#                 upload_url = result.server_url",
+      "#                 hash_file_request = result.hash_file_request",
+      "#                 count_retry += 1",
+      "#             if callable(callback):",
+      "#                 try:",
+      "#                     if inspect.iscoroutinefunction(callback):",
+      "#                         await callback(len(file), index * chunk)",
+      "#                     else:",
+      "#                         callback(len(file), index * chunk)",
+      "#                 except exceptions.CancelledError:",
+      "#                     return None",
+      "#                 except Exception:",
+      "#                     pass",
+      "#             index += 1",
+      "#         except Exception:",
+      "#             pass",
+      "#     status = response['status']",
+      "#     status_det = response['status_det']",
+      "#     if status == 'OK' and status_det == 'OK':",
+      "#         response.update(result.original_update)",
+      "#         return Update(response)",
+      "#     raise exceptions(status_det)(response, request=response)"
+    ]
+  },
+  "rubino_thumbnail.py": {
+    "doc": null,
+    "classes": {
+      "ResultMedia": {
+        "doc": "Represents media data along with its metadata.\n\nAttributes:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds.",
+        "methods": {
+          "__repr__": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "__init__": {
+            "args": [
+              "self",
+              "image",
+              "width",
+              "height",
+              "seconds"
+            ],
+            "doc": "Initialize ResultMedia with image data and metadata.\n\nArgs:\n- image (bytes): The raw image data.\n- width (int): The width of the media.\n- height (int): The height of the media.\n- seconds (int): The duration of the media in seconds."
+          },
+          "ndarray_to_bytes": {
+            "args": [
+              "self",
+              "image"
+            ],
+            "doc": "Convert NumPy array to bytes.\n\nArgs:\n- image: NumPy array representing the image.\n\nReturns:\n- bytes: The image data in bytes."
+          },
+          "to_base64": {
+            "args": [
+              "self"
+            ],
+            "doc": "Convert media data to base64.\n\nReturns:\n- str: Base64-encoded media data."
+          }
+        }
+      },
+      "MediaThumbnail": {
+        "doc": "Provides methods to generate media thumbnails.\n\nMethods:\n- from_image: Generate a thumbnail from image data.\n- from_video: Generate a thumbnail from video data.",
+        "methods": {
+          "from_image": {
+            "args": [
+              "cls",
+              "image"
+            ],
+            "doc": "Generate a thumbnail from image data.\n\nArgs:\n- image (bytes): The raw image data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          "from_video": {
+            "args": [
+              "cls",
+              "video"
+            ],
+            "doc": "Generate a thumbnail from video data.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          "_from_video_opencv": {
+            "args": [
+              "cls",
+              "video"
+            ],
+            "doc": "Generate a thumbnail from video data using OpenCV.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          },
+          "_from_video_moviepy": {
+            "args": [
+              "cls",
+              "video"
+            ],
+            "doc": "Generate a thumbnail from video data using MoviePy.\n\nArgs:\n- video (bytes): The raw video data.\n\nReturns:\n- ResultMedia: ResultMedia object containing the thumbnail and metadata."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# Check if PIL is available",
+      "# Check if OpenCV and NumPy are available",
+      "# If image is not a NumPy array, convert it",
+      "# Resize the image",
+      "# Calculate aspect ratio",
+      "# Resize the image to fit within 720x720",
+      "# Encode the image to PNG format",
+      "# Read the video using OpenCV",
+      "# Check if the video is opened successfully",
+      "# Read the first frame",
+      "# If successful, create ResultMedia object",
+      "# Get video properties",
+      "# Resize the frame to 720x720",
+      "# Release the video capture object",
+      "# Save the video to a temporary file",
+      "# Read the video using MoviePy",
+      "# Extract the first frame",
+      "# Close the clip and remove the temporary file",
+      "# Resize the frame to 720x720",
+      "# Convert frame to BGR (OpenCV uses BGR by default)"
+    ]
+  },
+  "sessions___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "sessions_sqliteSession.py": {
+    "doc": null,
+    "classes": {
+      "SQLiteSession": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "session"
+            ],
+            "doc": null
+          },
+          "upgrade_database": {
+            "args": [
+              "self",
+              "version"
+            ],
+            "doc": null
+          },
+          "information": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "insert": {
+            "args": [
+              "self",
+              "phone_number",
+              "auth",
+              "guid",
+              "user_agent",
+              "private_key"
+            ],
+            "doc": null
+          },
+          "from_string": {
+            "args": [
+              "cls",
+              "session",
+              "file_name"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# import os"
+    ]
+  },
+  "sessions_stringSession.py": {
+    "doc": null,
+    "classes": {
+      "StringSession": {
+        "doc": null,
+        "methods": {
+          "__init__": {
+            "args": [
+              "self",
+              "session"
+            ],
+            "doc": null
+          },
+          "load": {
+            "args": [
+              "cls",
+              "session"
+            ],
+            "doc": null
+          },
+          "dump": {
+            "args": [
+              "cls",
+              "session"
+            ],
+            "doc": null
+          },
+          "from_sqlite": {
+            "args": [
+              "cls",
+              "session"
+            ],
+            "doc": null
+          },
+          "insert": {
+            "args": [
+              "self",
+              "phone_number",
+              "auth",
+              "guid",
+              "user_agent"
+            ],
+            "doc": null
+          },
+          "information": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "save": {
+            "args": [
+              "self",
+              "file_name"
+            ],
+            "doc": null
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": []
+  },
+  "types___init__.py": {
+    "doc": null,
+    "classes": {},
+    "functions": {},
+    "comments": []
+  },
+  "types_update.py": {
+    "doc": null,
+    "classes": {
+      "Update": {
+        "doc": null,
+        "methods": {
+          "__str__": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "__getattr__": {
+            "args": [
+              "self",
+              "name"
+            ],
+            "doc": null
+          },
+          "__setitem__": {
+            "args": [
+              "self",
+              "key",
+              "value"
+            ],
+            "doc": null
+          },
+          "__getitem__": {
+            "args": [
+              "self",
+              "key"
+            ],
+            "doc": null
+          },
+          "__lts__": {
+            "args": [
+              "self",
+              "update"
+            ],
+            "doc": null
+          },
+          "__init__": {
+            "args": [
+              "self",
+              "update"
+            ],
+            "doc": null
+          },
+          "jsonify": {
+            "args": [
+              "self",
+              "indent"
+            ],
+            "doc": null
+          },
+          "find_keys": {
+            "args": [
+              "self",
+              "keys",
+              "original_update"
+            ],
+            "doc": null
+          },
+          "command": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "to_dict": {
+            "args": [
+              "self"
+            ],
+            "doc": "Return the update as dict"
+          },
+          "message": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_me": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "status": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "action": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_edited": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "type": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "title": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_forward": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "forward_type_from": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_event": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "event_data": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_file_inline": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "file_inline": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "music": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "file": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "photo": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "video": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "voice": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "contact": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "location": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "poll": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "gif": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "sticker": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "text": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "message_id": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "reply_message_id": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_group": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_channel": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_private": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "object_guid": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "author_guid": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "is_text": {
+            "args": [
+              "self"
+            ],
+            "doc": null
+          },
+          "guid_type": {
+            "args": [
+              "self",
+              "object_guid"
+            ],
+            "doc": "Determine the type of the object based on its GUID.\n\nArgs:\n    - object_guid (str): The GUID of the object.\n\nReturns:\n    - str: The type of the object ('Channel', 'Group', or 'User')."
+          }
+        }
+      }
+    },
+    "functions": {},
+    "comments": [
+      "# async methods"
+    ]
+  }
+}

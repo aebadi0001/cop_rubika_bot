@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+all_py/
+*.env
+.env
+.bak
